@@ -6,7 +6,7 @@ timedatectl set-timezone "$TIME_ZONE"
 add-apt-repository ppa:neovim-ppa/unstable
 apt update
 
-apt install -y \
+DEBIAN_FRONTEND=noninteractive apt install -yyq \
   bison \
   build-essential \
   flex \
