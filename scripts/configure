@@ -20,7 +20,7 @@ DEBIAN_FRONTEND=noninteractive apt install -yyq \
   libelf-dev \
   libseccomp-dev \
   libselinux1-dev \
-  libssl-dev \
+  libssl1.0-dev \
   make \
   neovim \
   python-dev \
@@ -29,7 +29,10 @@ DEBIAN_FRONTEND=noninteractive apt install -yyq \
   python3-pip \
   silversearcher-ag \
   tldr \
-  util-linux
+  util-linux \
+  nodejs-dev \
+  node-gyp \
+  npm
 
 pip3 --version
 pip3 install neovim
