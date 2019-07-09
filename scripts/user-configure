@@ -2,11 +2,11 @@
 set -ex
 
 # curl vimfiles.luan.sh/install | bash
-if [[ ! -d ${HOME}/vimfiles ]] ; then
-  git clone https://github.com/luan/vimfiles.git "${HOME}/vimfiles"
-  pushd "${HOME}/vimfiles"
-    ./bin/install --non-interactive
-  popd
+if [[ ! -d "${HOME}/.config/nvim" ]] ; then
+  git clone https://github.com/luan/nvim.git "${HOME}/.config/nvim"
+  # pushd "${HOME}/vimfiles"
+    # ./bin/install --non-interactive
+  # popd
 fi
 
 if [[ ! -d ${HOME}/tmuxfiles ]]; then
