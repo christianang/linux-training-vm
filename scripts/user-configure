@@ -41,6 +41,10 @@ else
 
   cat <<-EOF >> "${HOME}/.bashrc"
 
+# add go to path
+
+export PATH=${PATH}:/usr/local/go/bin
+
 # set GOPATH
 
 export GOPATH=${HOME}/workspace/go
